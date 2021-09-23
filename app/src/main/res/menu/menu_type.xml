@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/plates"
+        android:title="Platos">
+    </item>
+    <item
+        android:id="@+id/woks"
+        android:title="Woks">
+    </item>
+    <item
+        android:id="@+id/pastes"
+        android:title="Pastas">
+    </item>
+    <item
+        android:id="@+id/tarts"
+        android:title="Tartas y Pasteles">
+    </item>
+    <item
+        android:id="@+id/salads"
+        android:title="Ensaladas">
+    </item>
+    <item
+        android:id="@+id/crepes"
+        android:title="Crepes y Fajitas">
+    </item>
+    <item
+        android:id="@+id/drinks"
+        android:title="Bebidas">
+    </item>
+    <item
+        android:id="@+id/beers"
+        android:title="Cervezas">
+    </item>
+    <item
+        android:id="@+id/wines"
+        android:title="Vinos">
+    </item>
+</menu>

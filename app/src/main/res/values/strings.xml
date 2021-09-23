@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Vells</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string name="home_fragment">Home fragment</string>
+    <string name="products_fragment">Products fragment</string>
+    <string name="configuration_fragment">Configuration fragment</string>
+    <string name="new_table">New Table</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
