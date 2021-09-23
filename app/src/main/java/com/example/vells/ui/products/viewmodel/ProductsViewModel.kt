@@ -24,7 +24,7 @@ class ProductsViewModel(private val mainRepository: MainRepository): ViewModel()
             }
         }
     }
-
+    
     fun getProducts(){
         CoroutineScope(Dispatchers.IO).launch {
             val product = mainRepository.getProducts()
