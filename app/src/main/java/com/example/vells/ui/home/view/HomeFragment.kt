@@ -16,6 +16,7 @@ import com.example.vells.databinding.FragmentHomeBinding
 import com.example.vells.ui.base.ViewModelFactory
 import com.example.vells.ui.home.adapter.HomeAdapter
 import com.example.vells.ui.home.viewmodel.HomeViewModel
+import kotlinx.android.synthetic.main.fragment_home.*
 
 class HomeFragment : Fragment() {
 

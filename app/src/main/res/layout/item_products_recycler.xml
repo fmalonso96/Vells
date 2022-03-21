@@ -7,19 +7,20 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_margin="10dp"
-        app:cardCornerRadius="32dp"
+        app:cardCornerRadius="12dp"
         app:cardElevation="8dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            style="@style/recycler_items_background">
 
             <TextView
                 android:id="@+id/tvProductName"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 tools:text="Pollo al disco"
-                android:textStyle="bold"
+                style="@style/recycler_items_title_text"
                 android:textSize="18sp"
                 android:layout_margin="8dp"
                 android:maxLines="1"
@@ -37,6 +38,7 @@
                 android:layout_margin="8dp"
                 android:maxLines="1"
                 android:ellipsize="end"
+                style="@style/recycler_items_text"
                 app:layout_constraintTop_toBottomOf="@id/tvProductName"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/tvProductPrice"
@@ -47,6 +49,7 @@
                 android:layout_width="100dp"
                 android:layout_height="0dp"
                 tools:text="$500"
+                style="@style/recycler_items_text"
                 android:textSize="20sp"
                 android:layout_margin="8dp"
                 android:gravity="center"

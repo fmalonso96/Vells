@@ -34,13 +34,14 @@ class NewProductFragment : Fragment() {
         communicator = activity as Communicator
 
         setupViewModel()
-        setBtnTypeMenu()
+        setBtnTypeMenuListener()
         setBtnConfirmListener()
+        setBtnCancelListener()
 
         return binding.root
     }
 
-    private fun setBtnTypeMenu() {
+    private fun setBtnTypeMenuListener() {
         binding.btnTypeMenu.setOnClickListener {
             val popupMenu = PopupMenu(this.context, binding.btnTypeMenu, Gravity.END)
             popupMenu.inflate(R.menu.menu_type)
@@ -59,7 +60,7 @@ class NewProductFragment : Fragment() {
 
     private fun setBtnConfirmListener() {
         binding.btnNewProduct.setOnClickListener{
-            var tvType = binding.tvNewProductType2.text
+            val tvType = binding.tvNewProductType2.text
             val etName = binding.etNewProductName.text
             val etDescription = binding.etNewProductDescription.text
             val etPrice = binding.etNewProductPrice.text
@@ -70,6 +71,12 @@ class NewProductFragment : Fragment() {
             }else {
                 Toast.makeText(this.context, "Completar todos los campos", Toast.LENGTH_LONG).show()
             }
+        }
+    }
+
+    private fun setBtnCancelListener() {
+        binding.btnCancel.setOnClickListener {
+            communicator.navigateToProducts()
         }
     }
 

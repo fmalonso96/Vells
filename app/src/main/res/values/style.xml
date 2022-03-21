@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Recycler items background. -->
+    <style name="recycler_items_background" parent="TextAppearance.AppCompat">
+        <item name="android:background">@color/light_grey</item>
+    </style>
+
+    <!-- Recycler items title text. -->
+    <style name="recycler_items_title_text" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/light_blue</item>
+        <item name="fontFamily">@font/acme</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Recycler items text. -->
+    <style name="recycler_items_text" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/light_blue</item>
+        <item name="fontFamily">@font/acme</item>
+    </style>
+
+
+
+
+
+    <!-- Background colours. -->
+    <style name="background_colour1" parent="TextAppearance.AppCompat">
+        <item name="android:background">@color/wine</item>
+    </style>
+
+    <style name="background_colour2" parent="TextAppearance.AppCompat">
+        <item name="android:background">@color/dark_blue</item>
+    </style>
+
+    <style name="background_colour3" parent="TextAppearance.AppCompat">
+        <item name="android:background">@color/light_blue</item>
+    </style>
+
+    <style name="background_colour4" parent="TextAppearance.AppCompat">
+        <item name="android:background">@color/grey</item>
+    </style>
+
+    <style name="background_colour5" parent="TextAppearance.AppCompat">
+        <item name="android:background">@color/light_grey</item>
+    </style>
+
+    <!-- Text colours. -->.
+    <style name="text_colour1" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/wine</item>
+    </style>
+
+    <style name="text_colour2" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/dark_blue</item>
+    </style>
+
+    <style name="text_colour3" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/light_blue</item>
+    </style>
+
+    <style name="text_colour4" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/grey</item>
+    </style>
+
+    <style name="text_colour5" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/light_grey</item>
+    </style>
+</resources>

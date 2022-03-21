@@ -9,4 +9,12 @@
     <color name="red3">#ED6C9F</color>
     <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
+
+    <!-- Custom -->
+    <color name="wine">#69566a</color>
+    <color name="dark_blue">#4c5870</color>
+    <color name="light_blue">#4a7f9e</color>
+    <color name="grey">#797c8d</color>
+    <color name="light_grey">#b5bdca</color>
+
 </resources>

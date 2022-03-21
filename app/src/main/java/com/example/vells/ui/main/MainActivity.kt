@@ -8,10 +8,9 @@ import androidx.core.view.GravityCompat
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import com.example.vells.R
-import com.example.vells.data.model.CatType
 import com.example.vells.data.model.Communicator
 import com.example.vells.databinding.ActivityMainBinding
-import com.example.vells.ui.configuration.ConfigurationFragment
+import com.example.vells.ui.configuration.view.ConfigurationFragment
 import com.example.vells.ui.home.view.HomeFragment
 import com.example.vells.ui.products.view.NewProductFragment
 import com.example.vells.ui.products.view.ProductsFragment
@@ -75,5 +74,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     override fun navigateToProducts() {
         changeFragment(ProductsFragment())
         setToolbarTitle("Productos")
+    }
+
+    override fun navigateToHome() {
+        changeFragment(HomeFragment())
+        setToolbarTitle("Menu Principal")
     }
 }
