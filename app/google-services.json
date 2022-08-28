@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "294792516112",
+    "project_id": "vells-2022",
+    "storage_bucket": "vells-2022.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:294792516112:android:b72c4e04da57170881f095",
+        "android_client_info": {
+          "package_name": "com.example.vells"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "294792516112-b9nhuchsgb4ne6e5dejgam3h0gr0q2i6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXsG0kC7k2GUSevWvFL8CkXF324DpfE2g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "294792516112-b9nhuchsgb4ne6e5dejgam3h0gr0q2i6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

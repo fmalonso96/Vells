@@ -8,6 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/drawerLayout"
+        android:backgroundTint="@color/secondary_dark"
         tools:context=".ui.main.MainActivity">
 
         <include
@@ -18,8 +19,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="start"
-            app:itemTextColor="@color/light_blue"
-            app:itemIconTint="@color/dark_blue"
+            android:backgroundTint="@color/primary_light"
+            app:itemTextColor="@color/primary_dark"
+            app:itemIconTint="@color/primary_dark"
+            app:itemTextAppearance="@style/navigation_items"
             app:headerLayout="@layout/nav_header_main"
             app:menu="@menu/nav_menu"/>
 

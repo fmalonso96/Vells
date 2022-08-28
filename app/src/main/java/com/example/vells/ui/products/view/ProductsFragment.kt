@@ -1,7 +1,11 @@
 package com.example.vells.ui.products.view
 
 import android.os.Bundle
-import android.view.*
+import android.view.Gravity
+import android.view.LayoutInflater
+import android.view.MenuItem
+import android.view.View
+import android.view.ViewGroup
 import android.widget.PopupMenu
 import androidx.core.view.get
 import androidx.databinding.DataBindingUtil
@@ -17,7 +21,7 @@ import com.example.vells.ui.base.ViewModelFactory
 import com.example.vells.ui.products.adapter.ProductsAdapter
 import com.example.vells.ui.products.viewmodel.ProductsViewModel
 
-class ProductsFragment : Fragment() {
+class ProductsFragment: Fragment() {
 
     private lateinit var viewModel: ProductsViewModel
     private lateinit var binding: FragmentProductsBinding
@@ -29,7 +33,7 @@ class ProductsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         // Inflate the layout for this fragment
-        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_products, container, false)
+        binding = FragmentProductsBinding.inflate(inflater, container, false)
         dbRoom = DbRoom.getDatabase(requireContext())
         communicator = activity as Communicator
 
@@ -53,7 +57,7 @@ class ProductsFragment : Fragment() {
     }
 
     private fun setupObserver() {
-        viewModel.currentProducts.observe(this.viewLifecycleOwner, {
+        viewModel.currentProducts.observe(this.viewLifecycleOwner) {
             val adapter = ProductsAdapter(it, onClick = {
                 // TODO: 22/9/2021
             }, object : ProductsAdapter.OptionsMenuClickListener {
@@ -63,7 +67,7 @@ class ProductsFragment : Fragment() {
                 }
             })
             binding.recyclerViewProducts.adapter = adapter
-        })
+        }
     }
 
     fun setFloatingListener() {

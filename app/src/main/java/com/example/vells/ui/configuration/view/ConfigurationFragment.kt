@@ -9,6 +9,7 @@ import androidx.databinding.DataBindingUtil
 import com.example.vells.R
 import com.example.vells.data.model.Communicator
 import com.example.vells.databinding.FragmentConfigurationBinding
+import com.example.vells.databinding.FragmentProductsBinding
 
 class ConfigurationFragment : Fragment() {
 
@@ -20,7 +21,7 @@ class ConfigurationFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         // Inflate the layout for this fragment
-        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_configuration, container, false)
+        binding = FragmentConfigurationBinding.inflate(inflater, container, false)
         communicator = activity as Communicator
 
         setBtnExitListener()

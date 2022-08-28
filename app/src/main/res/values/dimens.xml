@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- General -->
+    <dimen name="match_constraint">0dp</dimen>
+    <dimen name="dimen_64">64dp</dimen>
+
+    <!-- Margins -->
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+
+    <!-- Padding -->
+    <dimen name="padding_16">16dp</dimen>
+
+    <!-- Texts -->
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="text_size_24">24sp</dimen>
+
+    <!-- Recycler Items Size -->
+    <dimen name="item_height_100">100dp</dimen>
+
+    <!-- Corner Radius -->
+    <dimen name="corner_radius_8">8dp</dimen>
+    <dimen name="corner_radius_12">12dp</dimen>
+
+    <!-- Card Elevation -->
+    <dimen name="card_elevation_8">8dp</dimen>
+
+    <!-- Icons -->
+    <dimen name="more_icon_50">50dp</dimen>
+</resources>

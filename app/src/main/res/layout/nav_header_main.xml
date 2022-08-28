@@ -3,16 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="160dp"
-    android:background="@color/light_grey">
+    android:background="@color/primary_dark">
 
     <ImageView
         android:id="@+id/navHeaderIV"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:src="@mipmap/ic_vells_round"
-        android:scaleType="centerCrop"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher_vells"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,16 +17,12 @@
 
     <TextView
         android:id="@+id/navHeaderTV"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/vells"
-        android:textColor="@color/light_blue"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:textStyle="bold"
-        android:textSize="24sp"
+        style="@style/drawer_title"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/navHeaderIV"
+        app:layout_constraintEnd_toEndOf="@+id/navHeaderIV"
         app:layout_constraintTop_toBottomOf="@+id/navHeaderIV" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
