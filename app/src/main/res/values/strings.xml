@@ -7,7 +7,7 @@
     <string name="products_fragment">Products fragment</string>
     <string name="configuration_fragment">Configuration fragment</string>
     <string name="new_table">New Table</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="vells">Vells</string>
     <string name="buscar">Buscar</string>
@@ -20,6 +20,8 @@
     <string name="precio">Precio:</string>
     <string name="confirmar">Confirmar</string>
     <string name="cancelar">Cancelar</string>
+
+    <!-- Configuration Strings -->
     <string name="opcion_1">Opcion 1</string>
     <string name="opcion_2">Opcion 2</string>
     <string name="opcion_3">Opcion 3</string>

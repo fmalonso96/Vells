@@ -1,6 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!-- NEW REDESIGN -->
+    <style name="toolbar">
+        <item name="fontFamily">@font/raleway</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_size_24</item>
+        <item name="android:textColor">@color/secondary_dark</item>
+        <item name="android:background">@color/primary_light</item>
+    </style>
+
+    <style name="button">
+        <item name="fontFamily">@font/raleway</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/secondary_light</item>
+        <item name="android:backgroundTint">@color/primary_dark</item>
+    </style>
+
+    <style name="recycler_item_text">
+        <item name="fontFamily">@font/raleway</item>
+        <item name="android:textSize">@dimen/text_size_24</item>
+        <item name="android:textColor">@color/primary_dark</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="drawer_title">
+        <item name="fontFamily">@font/raleway</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_size_24</item>
+        <item name="android:textColor">@color/primary_light</item>
+        <item name="android:text">@string/vells</item>
+    </style>
+
+    <style name="navigation_items">
+        <item name="fontFamily">@font/raleway</item>
+        <item name="android:textColor">@color/primary_dark</item>
+    </style>
+
+
+
+
+
+
+
+
     <!-- Recycler items background. -->
     <style name="recycler_items_background" parent="TextAppearance.AppCompat">
         <item name="android:background">@color/light_grey</item>
@@ -9,14 +54,14 @@
     <!-- Recycler items title text. -->
     <style name="recycler_items_title_text" parent="TextAppearance.AppCompat">
         <item name="android:textColor">@color/light_blue</item>
-        <item name="fontFamily">@font/acme</item>
+        <item name="fontFamily">@font/raleway</item>
         <item name="android:textStyle">bold</item>
     </style>
 
     <!-- Recycler items text. -->
     <style name="recycler_items_text" parent="TextAppearance.AppCompat">
         <item name="android:textColor">@color/light_blue</item>
-        <item name="fontFamily">@font/acme</item>
+        <item name="fontFamily">@font/raleway</item>
     </style>
 
 

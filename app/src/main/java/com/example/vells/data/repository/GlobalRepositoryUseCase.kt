@@ -1,5 +1,6 @@
 package com.example.vells.data.repository
 
+import android.content.Context
 import com.example.vells.data.database.DbRoom
 import com.example.vells.data.database.ProductEntity
 import com.example.vells.data.database.TableEntity
@@ -8,6 +9,7 @@ import com.example.vells.data.model.TablePOJO
 
 class GlobalRepositoryUseCase(private val dbRoom: DbRoom): GlobalRepository.tablesRepository, GlobalRepository.productsRepository {
 
+    //Database Tables Functions
     override fun insertTable(table: TablePOJO): Long {
         val dbTable = TableEntity(table.id, table.name)
 
@@ -28,6 +30,7 @@ class GlobalRepositoryUseCase(private val dbRoom: DbRoom): GlobalRepository.tabl
         return table
     }
 
+    //Database Products Functions
     override fun insertProduct(product: ProductPOJO): Long {
         val dbProduct = ProductEntity(null, product.name, product.description, product.price)
         return dbRoom.productDao.insert(dbProduct)
@@ -45,4 +48,6 @@ class GlobalRepositoryUseCase(private val dbRoom: DbRoom): GlobalRepository.tabl
     override fun foundProduct(name: String) {
         dbRoom.productDao.foundProduct(name)
     }
+
+    //Database.....
 }

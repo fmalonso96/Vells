@@ -24,14 +24,15 @@ class HomeViewModel(private val globalRepositoryUseCase: GlobalRepositoryUseCase
 
     fun getTables(){
         CoroutineScope(Dispatchers.IO).launch {
-            val table = globalRepositoryUseCase.getTables()
-            tables.postValue(table)
+            val tablesList = globalRepositoryUseCase.getTables()
+            tables.postValue(tablesList)
         }
     }
 
-    fun deleteTable(id: Int){
+    fun deleteTableAndUpdate(id: Int){
         CoroutineScope(Dispatchers.IO).launch {
             globalRepositoryUseCase.deleteTable(id)
+            getTables()
         }
     }
 }

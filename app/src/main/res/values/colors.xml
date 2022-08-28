@@ -17,4 +17,12 @@
     <color name="grey">#797c8d</color>
     <color name="light_grey">#b5bdca</color>
 
+    <!-- Possible colours for the app -->
+    <color name="primary_dark">#2C2824</color>
+    <color name="secondary_dark">#10F6F1EC</color>
+    <color name="tertiary_dark">#908E87</color>
+    <color name="primary_light">#F6F4EB</color>
+    <color name="secondary_light">#E8E5DD</color>
+    <color name="error_color">#FD6565</color>
+
 </resources>

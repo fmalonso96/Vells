@@ -13,6 +13,7 @@ import com.example.vells.data.database.DbRoom
 import com.example.vells.data.model.Communicator
 import com.example.vells.data.model.ProductPOJO
 import com.example.vells.databinding.FragmentNewProductBinding
+import com.example.vells.databinding.FragmentProductsBinding
 import com.example.vells.ui.base.ViewModelFactory
 import com.example.vells.ui.products.viewmodel.ProductsViewModel
 import java.lang.IllegalArgumentException
@@ -29,7 +30,7 @@ class NewProductFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         // Inflate the layout for this fragment
-        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_new_product, container, false)
+        binding = FragmentNewProductBinding.inflate(inflater, container, false)
         dbRoom = DbRoom.getDatabase(requireContext())
         communicator = activity as Communicator
 

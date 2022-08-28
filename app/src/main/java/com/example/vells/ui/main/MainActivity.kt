@@ -14,9 +14,11 @@ import com.example.vells.ui.configuration.view.ConfigurationFragment
 import com.example.vells.ui.home.view.HomeFragment
 import com.example.vells.ui.products.view.NewProductFragment
 import com.example.vells.ui.products.view.ProductsFragment
+import com.example.vells.ui.tables.view.TableFragment
 import com.google.android.material.navigation.NavigationView
-import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.app_bar_main.*
+import kotlinx.android.synthetic.main.activity_main.drawerLayout
+import kotlinx.android.synthetic.main.activity_main.navView
+import kotlinx.android.synthetic.main.app_bar_main.toolbarMain
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener, Communicator {
 
@@ -79,5 +81,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     override fun navigateToHome() {
         changeFragment(HomeFragment())
         setToolbarTitle("Menu Principal")
+    }
+
+    override fun navigateToTable() {
+        changeFragment(TableFragment())
+        setToolbarTitle("Detalle de Mesa")
     }
 }
